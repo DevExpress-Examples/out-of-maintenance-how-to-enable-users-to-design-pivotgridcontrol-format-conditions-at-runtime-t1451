@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[MainForm.cs](./CS/MainForm.cs) (VB: [MainForm.vb](./VB/MainForm.vb))**
+* [CondititonItemControl.cs](./CS/PivotGridFormatCondition/CondititonItemControl.cs) (VB: [CondititonItemControl.vb](./VB/PivotGridFormatCondition/CondititonItemControl.vb))
+* [CustomConditionItems.cs](./CS/PivotGridFormatCondition/CustomConditionItems.cs) (VB: [CustomConditionItems.vb](./VB/PivotGridFormatCondition/CustomConditionItems.vb))
+* [ExpressionConditionDesigner.cs](./CS/PivotGridFormatCondition/ExpressionConditionDesigner.cs) (VB: [ExpressionConditionDesigner.vb](./VB/PivotGridFormatCondition/ExpressionConditionDesigner.vb))
+* [SimpleConditionDesigner.cs](./CS/PivotGridFormatCondition/SimpleConditionDesigner.cs) (VB: [SimpleConditionDesigner.vb](./VB/PivotGridFormatCondition/SimpleConditionDesigner.vb))
+* [ViewFormatDesigner.cs](./CS/PivotGridFormatCondition/ViewFormatDesigner.cs) (VB: [ViewFormatDesigner.vb](./VB/PivotGridFormatCondition/ViewFormatDesigner.vb))
+<!-- default file list end -->
 # How to enable users to design PivotGridControl format conditions at runtime
 
 
