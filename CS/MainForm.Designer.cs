@@ -28,16 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding4 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding5 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding6 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding7 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.countriesDBDataSet1 = new FormatCondititonsDesigner.countriesDBDataSet();
+            this.fieldCountry = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldOfficialName = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldCurrency = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldCapital = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldArea = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldPopulation = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldLanguages = new DevExpress.XtraPivotGrid.PivotGridField();
             this.countriesTableAdapter1 = new FormatCondititonsDesigner.countriesDBDataSetTableAdapters.CountriesTableAdapter();
-            this.fieldCountry1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldOfficialName1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldCurrency1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldCapital1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldArea1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldPopulation1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldLanguages1 = new DevExpress.XtraPivotGrid.PivotGridField();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesDBDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -48,15 +55,16 @@
             this.pivotGridControl1.DataSource = this.countriesDBDataSet1;
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
-            this.fieldCountry1,
-            this.fieldOfficialName1,
-            this.fieldCurrency1,
-            this.fieldCapital1,
-            this.fieldArea1,
-            this.fieldPopulation1,
-            this.fieldLanguages1});
+            this.fieldCountry,
+            this.fieldOfficialName,
+            this.fieldCurrency,
+            this.fieldCapital,
+            this.fieldArea,
+            this.fieldPopulation,
+            this.fieldLanguages});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
+            this.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
             this.pivotGridControl1.Size = new System.Drawing.Size(657, 456);
             this.pivotGridControl1.TabIndex = 0;
             // 
@@ -65,61 +73,68 @@
             this.countriesDBDataSet1.DataSetName = "countriesDBDataSet";
             this.countriesDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // fieldCountry
+            // 
+            this.fieldCountry.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldCountry.AreaIndex = 0;
+            this.fieldCountry.Caption = "Country";
+            dataSourceColumnBinding1.ColumnName = "Country";
+            this.fieldCountry.DataBinding = dataSourceColumnBinding1;
+            this.fieldCountry.Name = "fieldCountry";
+            // 
+            // fieldOfficialName
+            // 
+            this.fieldOfficialName.AreaIndex = 0;
+            this.fieldOfficialName.Caption = "Official Name";
+            dataSourceColumnBinding2.ColumnName = "OfficialName";
+            this.fieldOfficialName.DataBinding = dataSourceColumnBinding2;
+            this.fieldOfficialName.Name = "fieldOfficialName";
+            // 
+            // fieldCurrency
+            // 
+            this.fieldCurrency.AreaIndex = 1;
+            this.fieldCurrency.Caption = "Currency";
+            dataSourceColumnBinding3.ColumnName = "Currency";
+            this.fieldCurrency.DataBinding = dataSourceColumnBinding3;
+            this.fieldCurrency.Name = "fieldCurrency";
+            // 
+            // fieldCapital
+            // 
+            this.fieldCapital.AreaIndex = 2;
+            this.fieldCapital.Caption = "Capital";
+            dataSourceColumnBinding4.ColumnName = "Capital";
+            this.fieldCapital.DataBinding = dataSourceColumnBinding4;
+            this.fieldCapital.Name = "fieldCapital";
+            // 
+            // fieldArea
+            // 
+            this.fieldArea.AreaIndex = 3;
+            this.fieldArea.Caption = "Area";
+            dataSourceColumnBinding5.ColumnName = "Area";
+            this.fieldArea.DataBinding = dataSourceColumnBinding5;
+            this.fieldArea.Name = "fieldArea";
+            // 
+            // fieldPopulation
+            // 
+            this.fieldPopulation.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldPopulation.AreaIndex = 0;
+            this.fieldPopulation.Caption = "Population";
+            dataSourceColumnBinding6.ColumnName = "Population";
+            this.fieldPopulation.DataBinding = dataSourceColumnBinding6;
+            this.fieldPopulation.Name = "fieldPopulation";
+            // 
+            // fieldLanguages
+            // 
+            this.fieldLanguages.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldLanguages.AreaIndex = 0;
+            this.fieldLanguages.Caption = "Languages";
+            dataSourceColumnBinding7.ColumnName = "Languages";
+            this.fieldLanguages.DataBinding = dataSourceColumnBinding7;
+            this.fieldLanguages.Name = "fieldLanguages";
+            // 
             // countriesTableAdapter1
             // 
             this.countriesTableAdapter1.ClearBeforeFill = true;
-            // 
-            // fieldCountry1
-            // 
-            this.fieldCountry1.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
-            this.fieldCountry1.AreaIndex = 0;
-            this.fieldCountry1.Caption = "Country";
-            this.fieldCountry1.FieldName = "Country";
-            this.fieldCountry1.Name = "fieldCountry1";
-            // 
-            // fieldOfficialName1
-            // 
-            this.fieldOfficialName1.AreaIndex = 0;
-            this.fieldOfficialName1.Caption = "Official Name";
-            this.fieldOfficialName1.FieldName = "OfficialName";
-            this.fieldOfficialName1.Name = "fieldOfficialName1";
-            // 
-            // fieldCurrency1
-            // 
-            this.fieldCurrency1.AreaIndex = 1;
-            this.fieldCurrency1.Caption = "Currency";
-            this.fieldCurrency1.FieldName = "Currency";
-            this.fieldCurrency1.Name = "fieldCurrency1";
-            // 
-            // fieldCapital1
-            // 
-            this.fieldCapital1.AreaIndex = 2;
-            this.fieldCapital1.Caption = "Capital";
-            this.fieldCapital1.FieldName = "Capital";
-            this.fieldCapital1.Name = "fieldCapital1";
-            // 
-            // fieldArea1
-            // 
-            this.fieldArea1.AreaIndex = 3;
-            this.fieldArea1.Caption = "Area";
-            this.fieldArea1.FieldName = "Area";
-            this.fieldArea1.Name = "fieldArea1";
-            // 
-            // fieldPopulation1
-            // 
-            this.fieldPopulation1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
-            this.fieldPopulation1.AreaIndex = 0;
-            this.fieldPopulation1.Caption = "Population";
-            this.fieldPopulation1.FieldName = "Population";
-            this.fieldPopulation1.Name = "fieldPopulation1";
-            // 
-            // fieldLanguages1
-            // 
-            this.fieldLanguages1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
-            this.fieldLanguages1.AreaIndex = 0;
-            this.fieldLanguages1.Caption = "Languages";
-            this.fieldLanguages1.FieldName = "Languages";
-            this.fieldLanguages1.Name = "fieldLanguages1";
             // 
             // MainForm
             // 
@@ -129,7 +144,6 @@
             this.Controls.Add(this.pivotGridControl1);
             this.Name = "MainForm";
             this.Text = "Example main form";
-            
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesDBDataSet1)).EndInit();
             this.ResumeLayout(false);
@@ -141,13 +155,13 @@
         private DevExpress.XtraPivotGrid.PivotGridControl pivotGridControl1;
         private countriesDBDataSet countriesDBDataSet1;
         private countriesDBDataSetTableAdapters.CountriesTableAdapter countriesTableAdapter1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldCountry1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldOfficialName1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldCurrency1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldCapital1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldArea1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldPopulation1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldLanguages1;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldCountry;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldOfficialName;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldCurrency;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldCapital;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldArea;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldPopulation;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldLanguages;
 
     }
 }
